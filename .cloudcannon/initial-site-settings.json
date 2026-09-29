@@ -1,0 +1,9 @@
+{
+	"ssg": "hugo",
+	"mode": "hosted",
+	"build": {
+		"build_command": "hugo",
+		"output_path": "public",
+		"hugo_version": "0.164.0"
+	}
+}

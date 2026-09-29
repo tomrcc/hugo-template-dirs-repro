@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>{{ .Title }}</title>
+		{{ partial "editable-regions" . }}
+	</head>
+	<body>
+		<h1>{{ .Title }}</h1>
+
+		<h2>1. Partial in the legacy dir</h2>
+		<div data-editable="component" data-component="card-legacy" data-prop="legacy_card">
+			{{- partial "card-legacy.html" .Params.legacy_card -}}
+		</div>
+
+		<h2>2. Partial in the new dir</h2>
+		<div data-editable="component" data-component="card-new" data-prop="new_card">
+			{{- partial "card-new.html" .Params.new_card -}}
+		</div>
+
+		<h2>3. Render hooks: heading hook in the legacy dir, link hook in the new dir</h2>
+		<div data-editable="component" data-component="markdown" data-prop="hooks">
+			{{- partial "markdown.html" .Params.hooks -}}
+		</div>
+	</body>
+</html>

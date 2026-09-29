@@ -1,0 +1,11 @@
+baseURL = "/"
+title = "Hugo template dirs repro"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "section"]
+
+[module]
+  [[module.imports]]
+    path = "github.com/CloudCannon/editable-regions"
+    version = "v0.0.21"
+
+[params.editable_regions]
+  verbose = true

@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://github.com/cloudcannon/configuration-types/releases/latest/download/cloudcannon-config.latest.schema.json
+collections_config:
+  pages:
+    path: content
+    glob:
+      - "_index.md"
+    url: /
